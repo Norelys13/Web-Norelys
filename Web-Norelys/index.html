@@ -33,11 +33,114 @@
             <h2>Tres regiones, tres sabores</h2>
             <p>Elegimos cada lote por su perfil en taza. Estas son las regiones de las que viene nuestro café.</p>
             <div class="regiones">
-                <img src="images/cajamarca.jfif" alt="" width="400" height="260">
-                <img src="images/junin.jfif" alt="" width="400" height="260">
-                <img src="images/cusco.jfif" alt="" width="400" height="260">
+                <figure>
+                    <img src="images/cajamarca.jfif" alt="" width="400" height="260">
+                    <figcaption><strong>Cajamarca</strong>Dulce y suave, con notas de caramelos y frutos secos.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/junin.jfif" alt="" width="400" height="260">
+                    <figcaption><strong>Junin</strong>Acidez brillante, con notas de naranja y chocolate.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cusco.jfif" alt="" width="400" height="260">
+                    <figcaption><strong>Cusco</strong>Cuerpo intenso, con notas de cacao y especias.</figcaption>
+                </figure>
             </div>
         </div>
     </section>
+
+    <section id="tabla">
+        <div>
+            <h2>Nuestras variedades</h2>
+                <table>
+                  <thead>                                  
+                    <tr>                                   
+                        <th>Café</th>            
+                        <th>Región</th>
+                        <th>Altitud</th>
+                        <th>Variedad</th>
+                        <th>Precio (250 g)</th>
+                    </tr>
+                </thead>
+                <tbody>                                
+                    <tr>                                  
+                        <th>San Ignacio</th>     
+                        <td>Cajamarca</td>                  
+                        <td>1 700 m</td>
+                        <td>Caturra</td>
+                        <td>S/ 32</td>
+                    </tr>
+                    <tr>
+                        <th>Jaén Dulce</th>
+                        <td>Cajamarca</td>
+                        <td>1 500 m</td>
+                        <td>Typica</td>
+                        <td>S/ 30</td>
+                    </tr>
+                    <tr>
+                        <th>Satipo Citrico</th>
+                        <td>Junin</td>
+                        <td>1 800 m</td>
+                        <td>Catimor</td>
+                        <td>S/ 34</td>
+                    </tr>
+                    <tr>
+                        <th>Chanchamayo</th>
+                        <td>Junin</td>
+                        <td>1 600 m</td>
+                        <td>Bourbon</td>
+                        <td>S/ 36</td>
+                    </tr>
+                    <tr>
+                        <th>Quillabamba</th>
+                        <td>Cusco</td>
+                        <td>1 900 m</td>
+                        <td>Geisha</td>
+                        <td>S/ 58</td>
+                    </tr>
+                    <tr>
+                        <th>Valle Sagrado</th>
+                        <td>Cusco</td>
+                        <td>2 000 m</td>
+                        <td>Typical</td>
+                        <td>S/ 40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>Pide tu cafe</h2>
+            <p class="intro">Completa el formulario y te escribiremos para confirmar el pago y el envio.</p>
+            <form id="form-pedido">
+                <div>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" name="correo">
+                </div>
+                <div>
+                    <label for="cafe">Cafe</label>
+                    <select id="cafe" name="cafe">
+                        <option>San Ignacio</option>
+                        <option>Chanchamayo</option>
+                        <option>Jaén Dulce</option>
+                        <option>Quillabamba</option>
+                        <option>Satipo Citrico</option>
+                        <option>Valle Sagrado</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Cantidad">Cantida de bolsas (250 g)</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="20">
+                </div>
+            </form>
+        </div>
+    </section>
+
 </body>
 </html>
