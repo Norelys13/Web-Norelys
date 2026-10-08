@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Andino - Especialidad peruano</title>
+    <link rel="icon" href="images/marca.jfif">
+</head>
+<body>
+    <header>
+            <a class="marca" href="#inicio"><img src="images/marca.jfif" width="38" height="38">Cafe Andino</a>
+            <nav aria-label="Principal">
+                <ul>
+                    <li><a href="#origenes">Origenes</a></li>
+                    <li><a href="#tabla">Variedades</a></li>
+                    <li><a href="#pedido">Pedir cafe</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <section>
+        <div>
+            <h1>Cafe de altura, tostado en pequeños lotes</h1>
+            <p>Trabajamos directamente con familias cafetaleras de los Andes peuanos. Cada bolsa lleva el nombre de la finca, la actitud y la fecha de tostado</p>
+            <a class="boton" href="#pedido">Pedir mi cafe</a>
+        </div>
+        <img src="images/icono 1.jfif" alt="" width="640" height="520">
+    </section>
+
+    <section id="origenes">
+        <div>
+            <h2>Tres regiones, tres sabores</h2>
+            <p>Elegimos cada lote por su perfil en taza. Estas son las regiones de las que viene nuestro café.</p>
+            <div class="regiones">
+                <figure>
+                    <img src="images/cajamarca.jfif" alt="" width="400" height="260">
+                    <figcaption><strong>Cajamarca</strong>Dulce y suave, con notas de caramelos y frutos secos.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/junin.jfif" alt="" width="400" height="260">
+                    <figcaption><strong>Junin</strong>Acidez brillante, con notas de naranja y chocolate.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cusco.jfif" alt="" width="400" height="260">
+                    <figcaption><strong>Cusco</strong>Cuerpo intenso, con notas de cacao y especias.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="tabla">
+        <div>
+            <h2>Nuestras variedades</h2>
+                <table>
+                  <thead>                                  
+                    <tr>                                   
+                        <th>Café</th>            
+                        <th>Región</th>
+                        <th>Altitud</th>
+                        <th>Variedad</th>
+                        <th>Precio (250 g)</th>
+                    </tr>
+                </thead>
+                <tbody>                                
+                    <tr>                                  
+                        <th>San Ignacio</th>     
+                        <td>Cajamarca</td>                  
+                        <td>1 700 m</td>
+                        <td>Caturra</td>
+                        <td>S/ 32</td>
+                    </tr>
+                    <tr>
+                        <th>Jaén Dulce</th>
+                        <td>Cajamarca</td>
+                        <td>1 500 m</td>
+                        <td>Typica</td>
+                        <td>S/ 30</td>
+                    </tr>
+                    <tr>
+                        <th>Satipo Citrico</th>
+                        <td>Junin</td>
+                        <td>1 800 m</td>
+                        <td>Catimor</td>
+                        <td>S/ 34</td>
+                    </tr>
+                    <tr>
+                        <th>Chanchamayo</th>
+                        <td>Junin</td>
+                        <td>1 600 m</td>
+                        <td>Bourbon</td>
+                        <td>S/ 36</td>
+                    </tr>
+                    <tr>
+                        <th>Quillabamba</th>
+                        <td>Cusco</td>
+                        <td>1 900 m</td>
+                        <td>Geisha</td>
+                        <td>S/ 58</td>
+                    </tr>
+                    <tr>
+                        <th>Valle Sagrado</th>
+                        <td>Cusco</td>
+                        <td>2 000 m</td>
+                        <td>Typical</td>
+                        <td>S/ 40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>Pide tu cafe</h2>
+            <p class="intro">Completa el formulario y te escribiremos para confirmar el pago y el envio.</p>
+            <form id="form-pedido">
+                <div>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" name="correo">
+                </div>
+                <div>
+                    <label for="cafe">Cafe</label>
+                    <select id="cafe" name="cafe">
+                        <option>San Ignacio</option>
+                        <option>Chanchamayo</option>
+                        <option>Jaén Dulce</option>
+                        <option>Quillabamba</option>
+                        <option>Satipo Citrico</option>
+                        <option>Valle Sagrado</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Cantidad">Cantida de bolsas (250 g)</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="20">
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
