@@ -13,10 +13,10 @@ Proyecto de sitio web
 
 ## Estructura
 cafe-andino/
-├── index.html
-├── README.md
-├── .gitignore
-├── css/estilos.css
-├── js/funciones.js
-├── images/   (SVG: marca, icono1, regiones)
-└── test/     (ignorada por git)
+- index.html
+- README.md
+- .gitignore
+- css/estilos.css
+- js/funciones.js
+- images/   (SVG: marca, icono1, regiones)
+- test/     (ignorada por git)
